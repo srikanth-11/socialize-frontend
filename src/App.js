@@ -18,7 +18,7 @@ function App() {
   position: positions.TOP_RIGHT
 };
  return<> <Provider template={AlertTemplate} {...options}> <Router>
- <Route exact path="/" component={Landingpage}/>
+ 
   <ProtectedRoute exact path="/posts/:postId" component={SinglePost} />
   <ProtectedRoute exact path="/app" component={SimpleCard} />
   <ProtectedRoute exact path="/createpost" component={CreatePost}/>
@@ -26,6 +26,7 @@ function App() {
    <Route exact path="/login" component={Login} />
    <Route exact path="/forgotpassword" component={Forgotpassword} />
         <Route path="/reset-password/:resetToken" component={Resetpassword} />
+        <Route exact path="/" component={Landingpage}/>
  </Router>
  </Provider>
  </>
