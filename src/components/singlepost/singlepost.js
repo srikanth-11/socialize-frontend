@@ -54,7 +54,7 @@ let token = localStorage.getItem('token')
      id:postId
     }
     const result = await axios.post(
-      "http://localhost:5000/post/getpost", data,
+      "https://sri-socialize.herokuapp.com/post/getpost", data,
       {
         headers: {
           "Content-Type": "application/json",
@@ -86,7 +86,7 @@ let token = localStorage.getItem('token')
    email:user.email,
    content:comment
   }
-  const result = axios.put( "http://localhost:5000/post/createcomment", data,
+  const result = axios.put( "https://sri-socialize.herokuapp.com/post/createcomment", data,
   {
     headers: {
       "Content-Type": "application/json",
