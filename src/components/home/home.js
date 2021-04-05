@@ -120,6 +120,7 @@ function SimpleCard() {
                         <Button labelPosition="right" as={Link} to={`/posts/${item._id}`}>
                           <Button color="blue" basic>
                             <Icon name="comments" />
+                            comments
                           </Button>
                           <Label basic color="blue" pointing="left">
                             {item.comments.length}
